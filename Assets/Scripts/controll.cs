@@ -807,7 +807,7 @@ public class controll : MonoBehaviour
                         turn = turn * -1;
                         calcPossibleMove();
                     }
-                    if (gameBoardState[0, 0] == -2 && turn == -1 && !modeAi)
+                    else if (gameBoardState[0, 0] == -2 && turn == -1 && !modeAi)
                     {
                         gameBoardState[0, 0] = turn;
                         clear2s();
@@ -829,7 +829,7 @@ public class controll : MonoBehaviour
                             turn = turn * -1;
                             calcPossibleMove();
                         }
-                        if (gameBoardState[i % 8, i / 8] == -2 && turn == -1 && !modeAi)
+                        else if (gameBoardState[i % 8, i / 8] == -2 && turn == -1 && !modeAi)
                         {
                             gameBoardState[i % 8, i / 8] = turn;
                             clear2s();
